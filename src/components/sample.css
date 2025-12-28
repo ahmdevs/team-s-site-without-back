@@ -1,0 +1,101 @@
+.portfolio-section {
+  padding: 70px 20px;
+  background: #f2eaed;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 32px;
+  color: #16235a;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.portfolio-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* کارت */
+.portfolio-card {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  background: #fff;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* عکس + گرادیان */
+.portfolio-image {
+  position: relative;
+}
+
+.portfolio-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* محتوا */
+.portfolio-content {
+  padding: 20px;
+  padding-bottom: 3rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.portfolio-content h3 {
+  color: #16235a;
+  margin-bottom: 13px;
+}
+
+.portfolio-content p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* دکمه */
+.portfolio-btn {
+  background: #888c46;
+  color: #fff;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.portfolio-btn:hover {
+  background: #6f7338; 
+  transform: translateY(-2px);
+}
+
+/* ریسپانسیو */
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}

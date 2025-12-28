@@ -1,0 +1,8 @@
+
+.seo-only {
+  position: absolute; /* خارج از دید کاربر */
+  left: -9999px; /* خیلی دور از صفحه */
+  width: 1px; /* فقط برای گوگل قابل خواندن */
+  height: 1px;
+  overflow: hidden;
+}

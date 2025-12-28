@@ -1,0 +1,147 @@
+body {
+  font-family: "IranYekan", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.services-section {
+  padding: 5rem 1.25rem;
+  background-color: #f2eaed;
+}
+
+.services-title {
+  color: #16235a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5rem 2rem;
+  align-items: stretch;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #16235a;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.service-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card p {
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+}
+
+.service-card ul li {
+  margin-bottom: 0.5rem;
+  color: #6b6b6b;
+}
+
+/* دکمه */
+.service-card button {
+  margin-top: 1.5rem;
+  background-color: #888c46;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "IranYekan", sans-serif;
+}
+
+.font-ir {
+  font-family: "IranYekan", sans-serif;
+}
+
+.service-card button:hover {
+  background-color: #a1a64f;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+  color: #16235a;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+
+.modal-content ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content button {
+  background-color: #888c46;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #a1a64f;
+}

@@ -1,0 +1,196 @@
+:root {
+  --nav-bg: #16235A;
+  --soft-bg: #F2EAED;
+  --cta: #888C46;
+}
+
+.home {
+  width: 100%;
+  direction: rtl;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 120px;
+  background: var(--soft-bg);
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  color: var(--nav-bg);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.hero-btns {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background: var(--cta);
+  padding: 12px 25px;
+  color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 2px solid var(--cta);
+  padding: 12px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--cta);
+  font-weight: 600;
+}
+
+.hero-img img {
+  width: 420px;
+}
+
+
+
+/* ---------------- ABOUT SECTION ---------------- */
+.about1 {
+  padding: 80px 120px;
+  text-align: center;
+  background: #fff;
+}
+
+.about1 h2 {
+  font-size: 32px;
+  color: var(--nav-bg);
+}
+
+.about1 p {
+  margin-top: 15px;
+  font-size: 17px;
+  width: 70%;
+  margin: 15px auto;
+  line-height: 1.9;
+}
+
+/* ---------------- SERVICES ---------------- */
+.services1 {
+  padding: 80px 120px;
+  text-align: center;
+  background: var(--soft-bg);
+}
+
+.service-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+}
+
+/* ---------------- WHY US ---------------- */
+.whyus {
+  padding: 80px 120px;
+  text-align: center;
+}
+
+.whyus-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.why-box {
+  background: var(--nav-bg);
+  color: white;
+  padding: 25px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ---------------- CTA ---------------- */
+.cta {
+  padding: 90px 120px;
+  text-align: center;
+  background: var(--nav-bg);
+  color: white;
+}
+
+.cta-btn {
+  margin-top: 25px !important;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero {
+    padding: 40px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-btns {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* ABOUT */
+  .about1 {
+    padding: 40px 20px;
+  }
+
+  .about1 p {
+    width: 100%;
+  }
+
+  /* SERVICES */
+  .services1 {
+    padding: 40px 20px;
+  }
+
+  /* WHY US */
+  .whyus {
+    padding: 40px 20px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 50px 20px;
+  }
+}
