@@ -1,7 +1,7 @@
 :root {
-  --nav-bg: #16235A;
-  --soft-bg: #F2EAED;
-  --cta: #888C46;
+  --nav-bg: #16235a;
+  --soft-bg: #f2eaed;
+  --cta: #888c46;
 }
 
 .home {
@@ -49,6 +49,11 @@
   font-weight: 600;
 }
 
+.btn:hover {
+  background-color: #a1a64f;
+  transform: translateY(-1px);
+}
+
 .btn-outline {
   border: 2px solid var(--cta);
   padding: 12px 25px;
@@ -58,11 +63,13 @@
   font-weight: 600;
 }
 
+.btn-outline:hover {
+  transform: translateY(-1px);
+}
+
 .hero-img img {
   width: 420px;
 }
-
-
 
 /* ---------------- ABOUT SECTION ---------------- */
 .about1 {
@@ -102,7 +109,7 @@
   background: #fff;
   padding: 30px;
   border-radius: 18px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 
@@ -146,7 +153,6 @@
 }
 
 @media (max-width: 768px) {
-
   /* HERO */
   .hero {
     padding: 40px 20px;
