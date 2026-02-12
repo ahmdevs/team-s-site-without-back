@@ -45,7 +45,7 @@ const Footer = () => {
             <li><a href="/">خانه</a></li>
             <li><a href="/services">خدمات</a></li>
             <li><a href="/samplework">نمونه‌کارها</a></li>
-            <li><a href="/academy">آکادمی</a></li>
+            <li><a href="/Specialized-areas">حوزه های تخصصی</a></li>
             <li><a href="/contact">تماس با ما</a></li>
           </ul>
         </div>
